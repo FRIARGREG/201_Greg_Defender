@@ -1,0 +1,75 @@
+
+class combatants():
+    def __init__(self, int_charType, int_cElement, int_cEnergy,
+                 int_charLVL, int_cHealth,int_cMoveSpeed,int_cNatArmour,
+                 int_cAtkSpeed, int_cM_Attack, int_cR_Attack):
+
+
+class beings():
+    def __init__(self, int_charID, int_charType, int_cElement, int_cEnergy,
+                 int_charLVL, int_cHealth,int_cMoveSpeed,int_cNatArmour,
+                 int_cAtkSpeed, int_cM_Attack, int_cR_Attack):
+
+        self.int_charID = int_charID
+        self.int_cHealth = int_cHealth
+        self.int_cMoveSpeed = int_cMoveSpeed
+        self.int_cNatArmour = int_cNatArmour
+        self.int_charType = int_charType
+        self.int_cElement = int_cElement
+        self.int_cEnergy = int_cEnergy
+        self.int_charLVL = int_charLVL
+        self.int_cAtkSpeed = int_cAtkSpeed
+        self.int_cM_Attack = int_cM_Attack
+        self.int_cR_Attack = int_cR_Attack
+        
+
+        self.
+
+
+
+
+
+    def char_movement:
+
+##    all characters have the following stats
+##	int_cHealth 	- when the health stat reaches 0, the character is dead.  
+##			- Villagers start with 5 health and children have 1.
+##			- All combatants have at least 8 and gain more as they level up.
+##
+##	int_cNatArmour 	- Is the rating of difficulty for an attacker to HIT the armoured character.
+##			- all villagers have a 0
+##			- all human combatants get 0 for a base and can add modifiers as they level up.
+##
+##	int_cM_Attack	- melee attack directly opposes the int_Armour.  it measures a characters ability to HIT armoured characters
+##	int_cR_Attack	- range attack directly opposes the int_Armour.  it measures a characters ability to SHOOT armoured characters
+##
+##	int_cMoveSpeed 	- The distance this character can move in 1 second. 
+##			- this value may be modified by encumberance, terrain and strength scores.
+##
+##	int_cAtkSpeed 	- The # of attacks this character can make, 
+##			- modified by weapon speed & encumberance.
+##
+##	int_cWill	- The characters ability to defend against mind affecting attacks, or to attack another persons mind.
+##
+##	int_cAlign	- the characters alignment.  Dictates which side of the war this character roots for.
+##			- 0: Neutral - takes no part in the battle, cannot be ordered about, attacks only in defence of itself.
+##			- 01: EVIL - or summoned by EVIL character
+##			- 02: GOOD - or summoned by GOOD character
+##			
+##	int_cElement	- the element type of the character.  
+##			- 00: non elemental characters & creatures
+##			- 01: FIRE/AIR		- casts or was summoned by this combination.  is vulnerable to both opposites.
+##			- 02: WATER/EARTH	- casts or was summoned by this combination.  is vulnerable to both opposites.
+##			- 03: FIRE/EARTH	- casts or was summoned by this combination.  is vulnerable to both opposites. 
+##			- 04: WATER/AIR		- casts or was summoned by this combination.  is vulnerable to both opposites.
+##			- 05: FIRE/FIRE		- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+##			- 06: WATER/WATER	- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+##			- 07: AIR/AIR		- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+##			- 08: EARTH/EARTH	- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+##
+##	int_cEnergy	- Energy type of character
+##			- 0: Negative energy type (undead character)
+##			- 1: Positive energy type (living character)
+##	
+##All chars are split up between combatants & non-combatants (villagers)
+##	there are 500 different types of combatants and 5 non-combatants

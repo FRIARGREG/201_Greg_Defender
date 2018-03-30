@@ -1,0 +1,361 @@
+Class setup for GREG'S DEFENDER
+Document Version 	0.01
+Created:		4:00 PM 11/22/2007
+Last Updated:		
+
+***
+TOC
+***
+
+1) Overview
+2) Object listing
+3) Class definitions
+4) Recent Updates
+
+****************************************************************
+1) Overview
+****************************************************************
+
+	Greg's Defender is (go figure) a wave-defender style game but with a lot of advancements and hundreds of new options that have never been seen in wave-defender style games before.  Based in a medieval/fantasy setting, our hero (player) must defend the village from waves of monsters eagerly seeking to rend/eat the innocents living in ignorant bliss of the worlds evils.  Should our Hero succeed, those innocents shall never know fear or suffer grousome deaths that these monsters promise to provide.  Should our Hero fail he WILL have to hear the screams of men, women & children as they are torn apart limb by bloody limb.	
+
+	However, our Hero is not alone in this Mission of Mercy.  Between waves of monsters, he has the opportunity to build a small army of trained warriors, hired wizards and questing priests to help battle the forces of evil.  He doesn't even have to pay for it all.  Every Round between waves, the village offers a stipend of 2gp per living villager to the Hero for his expences and fees of running an army.  Also, every 5 rounds (including the initial round as a deposit) the local lord offers 150 gp as payment for services rendered. The Hero cannot pocket this money as he WILL need to train, upgrade and outfit his soldiers/archers/scouts as well as pay the fees/expenses for magical services from war wizards and finally offer tithes and donations to priests for their protections & healing arts.
+
+	The Hero may purchase weapons, armour and other necessities (magic or mundane) from the trading caravan which arrives in town every 4 rounds (including the 1st round) but he must pay the unjustified prices and taxes levied by the trading guilds to do so.  However he may also commission weapons, Armour and other objects from the village craftspeople for a discounted price, tax free but must wait for the production cycle to end for his orders to be complete.  Faster cycles for cheaper items.
+
+	Prices also change based on the price & availability of materials.  The Hero may offer to keep an inventory of materials as well as stock a warehouse of weapons & armour.  There's nothing wrong with building a trading company while he's at it. someone, somewhere wants to buy all that salvage the monsters leave behind.
+
+	Combat is pretty easy, the bad guys start some distance from the outskirts of town with a leader (or not) and the good guys start at the gates to the town.
+
+****************************************************************
+2) Object listing
+****************************************************************
+Characters Class
+all characters have the following stats
+	int_cHealth 	- when the health stat reaches 0, the character is dead.  
+			- Villagers start with 5 health and children have 1.
+			- All combatants have at least 8 and gain more as they level up.
+
+	int_cNatArmour 	- Is the rating of difficulty for an attacker to HIT the armoured character.
+			- all villagers have a 0
+			- all human combatants get 0 for a base and can add modifiers as they level up.
+
+	int_cM_Attack	- melee attack directly opposes the int_Armour.  it measures a characters ability to HIT armoured characters
+	int_cR_Attack	- range attack directly opposes the int_Armour.  it measures a characters ability to SHOOT armoured characters
+
+	int_cMoveSpeed 	- The distance this character can move in 1 second. 
+			- this value may be modified by encumberance, terrain and strength scores.
+
+	int_cAtkSpeed 	- The # of attacks this character can make, 
+			- modified by weapon speed & encumberance.
+
+	int_cWill	- The characters ability to defend against mind affecting attacks, or to attack another persons mind.
+
+	int_cAlign	- the characters alignment.  Dictates which side of the war this character roots for.
+			- 0: Neutral - takes no part in the battle, cannot be ordered about, attacks only in defence of itself.
+			- 01: EVIL - or summoned by EVIL character
+			- 02: GOOD - or summoned by GOOD character
+			
+	int_cElement	- the element type of the character.  
+			- 00: non elemental characters & creatures
+			- 01: FIRE/AIR		- casts or was summoned by this combination.  is vulnerable to both opposites.
+			- 02: WATER/EARTH	- casts or was summoned by this combination.  is vulnerable to both opposites.
+			- 03: FIRE/EARTH	- casts or was summoned by this combination.  is vulnerable to both opposites. 
+			- 04: WATER/AIR		- casts or was summoned by this combination.  is vulnerable to both opposites.
+			- 05: FIRE/FIRE		- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+			- 06: WATER/WATER	- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+			- 07: AIR/AIR		- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+			- 08: EARTH/EARTH	- casts or was summoned by the specialist caster. is vulnerable to only it's opposition.
+
+	int_cEnergy	- Energy type of character
+			- 0: Negative energy type (undead character)
+			- 1: Positive energy type (living character)
+	
+All chars are split up between combatants & non-combatants (villagers)
+	there are 500 different types of combatants and 5 non-combatants
+*************
+subclass: non-combatants (the innocents)
+*************
+	Villager child
+	Villager female adult	
+	Villager female elder
+	Villager male adult
+	Villager male elder
+
+children run away from monsters
+women protect children
+men protect women and children
+elders stand there and get cut down
+
+when villagers die, they modify the army's moral rating during combat. 
+if moral is bad, it gets worse.
+good leadership scores can turn moral good with good rolls.
+
+*************
+subclass: combatants (good guys)
+*************
+leadership scores reflect current status in the army
+	- trainee
+	- private
+	- corporal
+	- elite
+
+primary magic wielding combatants cannot wear armour
+	- priests only carry a single large walking staff which may or may not be magical
+	- wizards can equip wands to cast other spells or bolster their own spells
+	- both can use scrolls & magic items that are not armour or weapons
+
+Primary Hero (always the General)
+	
+Raised Heros (elite soldiers, mages or priests that level up to captain)
+	- any weapon/armour configuration
+	- multiple weapon configs changable during combat
+
+Melee soldier
+	weapons
+	- weapon & shield
+	- 2 weapons
+	- lrg weapon
+	- double weapon	
+	armour
+	- light to medium
+
+Ranged soldier
+	weapons
+	- thrown weapon
+	- javelin weapon
+	- rifle weapon
+	- bow weapon
+	armour
+	- light only
+
+Scout soldiers
+	- any ranged weapon
+	- light armour only, no shield
+	- track/hide tracks
+	- ability(sneak)
+	- ability(snipe)
+
+Bard
+	- any weapon
+	- light armour only, no shield
+	- any 2 spells (doesn't take elemental type)
+	- boost moral
+	- extend leadership
+
+Wizards
+	- select any 2 schools
+	- start with 2 spells (1 from each selected school)
+	- every level can choose new spell from selected schools or upgrade an existing spell
+
+Priests
+	- select any 2 spheres
+	- start with 2 spells (1 from each selected sphere)
+	- every level can choose new spell from selected spheres or upgrade an existing spell
+
+****************************************************************
+3) Class definitions
+****************************************************************
+
+
+
+
+
+
+
+
+
+
+
+****************************************************************
+4) Spell descriptions
+****************************************************************
+*********
+Element damage
+*********
+When 
+
+
+
+
+
+
+*********
+Spells
+*********
+
+BOLT - fire/ice/lightning/stone (Single target, ranged attack score)
+Level 1: Rng 10, Dmg 2 x clvl
+Level 3: Rng 15, Dmg 2 x clvl
+Level 5: Rng 25, Dmg 2 x clvl
+Level 7: Rng 40, Dmg 2 x clvl
+Level 9: Rng 60, Dmg 2 x clvl
+
+SPLASH - fire/ice/shale spray & wind
+Level 1: Area 05, Rng 5 x clvl, Dmg 01-05
+Level 2: Area 05, Rng 5 x clvl, Dmg 01-10
+Level 3: Area 05, Rng 5 x clvl, Dmg 01-15
+Level 4: Area 15, Rng 5 x clvl, Dmg 05-15
+Level 5: Area 15, Rng 5 x clvl, Dmg 05-20
+Level 6: Area 15, Rng 5 x clvl, Dmg 05-25
+Level 7: Area 30, Rng 5 x clvl, Dmg 10-25
+Level 8: Area 30, Rng 5 x clvl, Dmg 10-30
+Level 9: Area 30, Rng 5 x clvl, Dmg 10-35
+
+WALL - fire/ice/force/dirt (always starts at wizards square and only goes strait in any direction)
+- FIRE DMG'S creatures atticking with melee weapons
+- ICE freezes/slows creatures within 10' of it
+- FORCE reflects spells cast on it back towards casters
+- Earth walls are permanent duration
+- Lng 5 + (slvl + clvl)
+- dmg 5 x clvl
+- HP (clvl X slvl)
+- HP - 1 per second duration
+
+SUMMON ELEMENTAL - fire/water/air/earth/nature
+- Summoned/Raised creatures share alignment with their caster
+- WILL score = casters WILL at time of casting
+Level 1: Rng = slvl x , HP 15, DMG 05-10, AC 05
+Level 2: Rng 20, HP 15, DMG 05-10, AC 06
+Level 3: Rng 25, HP 15, DMG 05-15, AC 07
+Level 4: Rng 30, HP 30, DMG 10-15, AC 07
+Level 5: Rng 35, HP 30, DMG 10-20, AC 08
+Level 6: Rng 40, HP 30, DMG 10-20, AC 09
+Level 7: Rng 45, HP 45, DMG 15-25, AC 10
+Level 8: Rng 50, HP 45, DMG 15-25, AC 10
+Level 9: Rng 55, HP 45, DMG 15-30, AC 11
+
+TURN ELEMENTAL - fire/water/earth/air
+- PWR opposes elemental's WILL
+Level 1: rng 20, PWR clvl + (1-3), DUR clvl x 3 seconds
+Level 4: rng 30, PWR clvl + (1-5), DUR clvl x 4 seconds
+Level 7: rng 40, PWR clvl + (1-7), DUR clvl x 5 seconds
+
+RAISE UNDEAD
+- Summoned/Raised creatures share alignment with their caster
+- target dead body of combatant within 10' x clvl 
+- target always neutral alignment, uncontrolled, begins attacking nearest living target
+Level 1: HP 05 x clvl, DMG 05-10, AC 05, WILL 5 + clvl
+Level 3: HP 05 x clvl, DMG 05-15, AC 07, WILL 6 + clvl
+Level 5: HP 05 x clvl, DMG 10-20, AC 08, WILL 7 + clvl
+Level 7: HP 05 x clvl, DMG 15-25, AC 10, WILL 8 + clvl
+Level 9: HP 05 x clvl, DMG 15-30, AC 11, WILL 9 + clvl
+
+RAISE DEAD
+- bring target back to life 
+- if it's an enemy, it WILL continue to attack you
+- does not work on summoned creatures
+- target can never be raised to a lvl exceeding it's own lvl -1
+- targets new lvl = slvl x clvl (or previous lvl-1 whichever is lower).
+
+CONTROL UNDEAD/BEASTS
+- change the allegiance of target undead/beast from neutral/enemy to your party
+- creature WILL vs slvl + cWILL
+
+BOLSTER UNDEAD
+target ac = ac + (slvl + clvl)
+
+WEAKEN UNDEAD
+target ac = ac - (slvl + clvl)
+
+INVISIBLE TO UNDEAD/BEASTS
+- duration = 10s x (slvl + clvl)
+- targets are not attacked by undead/beasts
+
+HEAL TARGET/MASS
+- heal is a targeted spell
+- mass heal is area effect
+- healed = 5 x (slvl + clvl)
+- mass healed = healed/# of targets
+
+NEUTRALIZE POISON
+- removes "poisoned" status of target
+
+ZONE POSITIVE/NEGATIVE/NATURAL/TRUTH/ELEMENT
+- area spell centered on caster
+- also affects flying creatures
+- radius = slvl x clvl
+	POSITIVE
+	- GOOD living heal 1 health/second/clvl while in zone
+	- EVIL living do not heal.
+	- undead take 1 dmg/second/slvl while in zone
+	- raise dead automatically raises creatures to full strength in positive zone
+	- raise undead WILL not work
+
+	NEGATIVE
+	- undead heal 1 health/second/clvl while in zone
+	- GOOD living take 1 dmg/second while in zone
+	- EVIL living are not affected
+	- raise dead WILL not work
+	- raise undead is bolstered (target undead gain lvls = slvl)
+
+	NATURE
+	- Beasts heal 1 health/second/clvl while in zone
+	- control of beasts is nullified within zone
+	- Beasts hostile at all times within zone
+	- raise undead WILL not work
+	
+	TRUTH
+	- hiding, sneaking and invisibility is nullified within zone
+	- control of undead is nullified within zone
+	- leadership scores are ignored during morale checks performed withing the zone
+	- raise dead/undead WILL not work
+
+PROTECTION FROM EVIL OR GOOD
+- taget gains bonus ac vs EVIL OR GOOD = slvl + clvl
+
+ALIGN WEAPONS GOOD OR EVIL
+- target gains +1 bonus to attk & dmg / slvl vs opposing alignment
+- mass ver = (2 x bonus) / # of targets
+
+SMITE EVIL OR GOOD
+- area affect attack
+- all EVIL OR GOOD in area take dmg = (slvl + clvl)
+
+FRENZY/CALM BEASTS
+- when cast on calm beasts, they become hostile & uncontrolled and attack nearest target
+- when cast on uncontrolled beasts, they become neutral & docile
+- maximum # targets = slvl x clvl
+- (cWILL + slvl) vs (beast WILL + controller lvl at time of casting)
+
+CHANGE TERRAIN
+- area effect, permanent
+- target zone becomes terrain type of casters choice. caster may turn a forest zone into a desert or water into land or vally into hill or vice/versa
+- area affected
+
+
+
+
+
+
+
+
+Level 1: 
+Level 2: 
+Level 3: 
+Level 4: 
+Level 5: 
+Level 6: 
+Level 7: 
+Level 8: 
+Level 9: 
+
+
+
+****************************************************************
+99) Recent Updates
+****************************************************************
+4:15 PM 11/22/2007	- Created Documentation page
+8:33 PM 11/22/2007	- added spell list
+5:43 PM 11/23/2007	- added/edited spell descriptions & new spells
+			- deleted spell list, will replace it later with new list based on completed spell descriptions.
+5:50 PM 11/23/2007	- simplified wizard and priest classes
+			- no longer 1 class per element/sphere
+			- now wizards/ pick 2 schools and priests pick 2 spheres.  
+			- wizards become the elemental types they pick.
+7:19 PM 11/23/2007	- added will, alignment, energy and elemental values to base char class.
+
+1:06 PM 2016-05-28	- refined some of the spells to balance good/evil
+			- began class module in python 2.7 to define character objects.
+			- char classes will be difficult.
+
+
