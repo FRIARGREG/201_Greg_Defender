@@ -1,0 +1,19 @@
+
+
+1	- mbti 1
+2	- mbti 2
+3	- mbti 3
+4	- mbti 4
+5	- race
+6	- health
+7	- iq
+8	- 
+9	- 
+10	- 
+11	- Age Potential
+12	- 
+13	- 
+14	- Luck
+15	- Magic Gene
+
+
