@@ -1,0 +1,96 @@
+############### FIGHT!!! ###############
+
+**** Round 1
+Greg (10/1) hit Joan (10/15) for 5 damage.
+Julian (10/14) missed Joan (5/15).
+Mikey (10/13) hit Tharg (10/14) for 3 damage.
+Joan (5/15) hit Mikey (10/13) for 7 damage.
+Julia (10/7) missed Mikey (3/13).
+Jennifer (10/13) hit Tharg (7/14) for 2 damage.
+Tharg (5/14) missed Mikey (3/13).
+**** Round 2
+Greg (10/1) hit Joan (5/15) for 1 damage.
+Julian (10/14) hit Joan (4/15) for 5 damage.
+   ----> Joan has died.
+Mikey (3/13) hit Tharg (5/14) for 2 damage.
+Julia (10/7) missed Mikey (3/13).
+Jennifer (10/13) hit Tharg (3/14) for 4 damage.
+   ----> Tharg has died.
+**** Round 3
+Greg (10/1) hit Julia (10/7) for 2 damage.
+Julian (10/14) hit Jennifer (10/13) for 1 damage.
+Mikey (3/13) missed Jennifer (9/13).
+Julia (8/7) hit Mikey (3/13) for 6 damage.
+   ----> Mikey has died.
+**** Round 4
+Greg (10/1) hit Julia (8/7) for 5 damage.
+Julian (10/14) hit Jennifer (9/13) for 3 damage.
+Julia (3/7) missed Jennifer (6/13).
+Jennifer (6/13) hit Julia (3/7) for 6 damage.
+   ----> Julia has died.
+**** Round 5
+Greg (10/1) hit Jennifer (6/13) for 3 damage.
+Julian (10/14) missed Jennifer (3/13).
+Jennifer (3/13) hit Julian (10/14) for 4 damage.
+**** Round 6
+Greg (10/1) hit Jennifer (3/13) for 2 damage.
+Julian (6/14) hit Jennifer (1/13) for 5 damage.
+   ----> Jennifer has died.
+**** Round 7
+Greg (10/1) missed Julian (6/14).
+Julian (6/14) hit Greg (10/1) for 4 damage.
+**** Round 8
+Greg (6/1) hit Julian (6/14) for 5 damage.
+Julian (1/14) missed Greg (6/1).
+**** Round 9
+2/12).
+Joan (10/15) missed Tharg (2/12).
+Julia (6/3) missed Joan (10/15).
+Tharg (2/12) hit Julian (5/10) for 2 damage.
+**** Round 8
+Julian (3/10) hit Tharg (2/12) for 4 damage.
+   ----> Tharg has died.
+Joan (10/15) hit Julian (3/10) for 3 damage.
+   ----> Julian has died.
+**** Round 9
+Joan (10/15) missed Julia (6/3).
+Julia (6/3) hit Joan (10/15) for 1 damage.
+**** Round 10
+Joan (9/15) hit Julia (6/3) for 2 damage.
+Julia (4/3) missed Joan (9/15).
+**** Round 11
+Joan (9/15) missed Julia (4/3).
+Julia (4/3) missed Joan (9/15).
+**** Round 12
+Joan (9/15) missed Julia (4/3).
+Julia (4/3) missed Joan (9/15).
+**** Round 13
+Joan (9/15) missed Julia (4/3).
+Julia (4/3) hit Joan (9/15) for 3 damage.
+**** Round 14
+Joan (6/15) hit Julia (4/3) for 2 damage.
+Julia (2/3) missed Joan (6/15).
+**** Round 15
+ 
+BRAVE ( 8 : 13 ) ; ANGUS ( 14 : 10 ) ; 4 
+**** Round 13
+ANGUS (10/10) missed BRAVE (8/13).
+BRAVE (8/13) missed ANGUS (10/10).
+**** Round 14
+ANGUS (10/10) missed BRAVE (8/13).
+BRAVE ( 8 : 13 ) ; ANGUS ( 10 : 10 ) ; 4 
+**** Round 15
+ANGUS (6/10) missed BRAVE (8/13).
+BRAVE (8/13) missed ANGUS (6/10).
+**** Round 16
+ANGUS (6/10) missed BRAVE (8/13).
+BRAVE ( 8 : 13 ) ; ANGUS ( 6 : 10 ) ; 5 
+**** Round 17
+ANGUS ( 1 : 10 ) ; BRAVE ( 8 : 13 ) ; 1 
+BRAVE (7/13) missed ANGUS (1/10).
+**** Round 18
+ANGUS ( 1 : 10 ) ; BRAVE ( 7 : 13 ) ; 4 
+BRAVE ( 3 : 13 ) ; ANGUS ( 1 : 10 ) ; 3 
+   ----> ANGUS has died.
+############### BRAVE wins the Battle ###############
+end of battle prog.

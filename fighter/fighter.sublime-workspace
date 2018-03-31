@@ -1,0 +1,332 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"this",
+				"this_east"
+			],
+			[
+				"h",
+				"how_many"
+			],
+			[
+				"e",
+				"end_time"
+			],
+			[
+				"st",
+				"start_time"
+			],
+			[
+				"new",
+				"new_desc"
+			],
+			[
+				"N",
+				"NUMERIC"
+			],
+			[
+				"job",
+				"job_text"
+			],
+			[
+				"en",
+				"end_loc"
+			],
+			[
+				"start",
+				"start_loc"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"pi",
+				"pick_temp"
+			],
+			[
+				"Pick",
+				"pick_target"
+			],
+			[
+				"str",
+				"strength"
+			],
+			[
+				"t",
+				"tcbo1"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"p",
+				"players"
+			],
+			[
+				"fi",
+				"fighter_Pool"
+			],
+			[
+				"f",
+				"fighter_Pool"
+			],
+			[
+				"pic",
+				"pick_target"
+			],
+			[
+				"if",
+				"if\tIf Condition"
+			],
+			[
+				"d",
+				"defence"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"ge",
+				"get_fighters"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Geoschedule/geoshed.py",
+			"settings":
+			{
+				"buffer_size": 1957,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/C/Users/gg/Documents/Programs/fighters_01.py",
+		"/C/Users/gg/Documents/Programs/make_fighter_file.py",
+		"/C/Users/gg/Documents/Programs/Fighter_Class.py",
+		"/C/Users/gg/Documents/Programs/functions.py",
+		"/C/Users/gg/Downloads/Greg Denyes (chaotic).asc",
+		"/C/Users/gg/Documents/Programs/helloWorld.py",
+		"/C/Users/gg/Documents/Programs/fighters-01.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"verbose",
+			"print",
+			"fList"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"CONS.verbose",
+			"fighter_Pool",
+			"templist"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Geoschedule/geoshed.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1687,
+								1687
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 381.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 330.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fighter.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
