@@ -17,5 +17,5 @@ defenders can level up and multiclass
 
 so think of this less as tower defence and more of clash of clans meets D&D and no massive multiplayer.
 
-see the repository here [home link](https://github.com/FRIARGREG/GAME-Gregs-Defender)
+see the repository here [home link]<https://github.com/FRIARGREG/GAME-Gregs-Defender>
 
